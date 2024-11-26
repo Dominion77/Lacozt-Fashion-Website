@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+header h1 {
+    margin-left: 70px;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    height: 60px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.icons{
+    color: #fff;
+    margin-left: 1000px;
+    font-size: 21px;
+}
+
+.icons i:hover{
+    color: navajowhite;
+    cursor: pointer;
+}
+
+header .search-bar {
+    position: relative;
+    gap: 0px;
+    margin-right: 250px;
+}
+
+header .search-bar input[type="text"] {
+    font-family: 'Encode Sans', sans-serif;
+    padding: 8px;
+    border: solid grey 1px;
+    border-radius: 3px;
+    height: 50px;
+    width: 400px;
+}
+
+header .search-bar button {
+    font-family: 'Encode Sans', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.main-slider {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    background-image: url(./images/slider1.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+.main-slider .content {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.main-slider .content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-left: 800px;
+}
+
+.main-slider .content p {
+    font-size: 18px;
+    color: black;
+    margin-left: 800px;
+}
+
+.main-slider .content .btn-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-group a{
+    text-decoration: none;
+    color: #000;
+}
+
+.main-slider .content .btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.main-slider .content .btn:hover{
+    background-color: #fff;
+}
+
+.main-slider .content .btn-shop-now {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: black;
+    margin-left: 800px;
+}
+
+.main-slider .content .btn-read-more {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #333;
+}
+
+
+.info-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8b629d;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    align-items: center;
+}
+
+.info-bar div{
+    text-align: center;
+    border-left: solid 1px #ccc;
+    padding: 0 25px;
+}
+
+.info-bar i{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info-bar div p{
+    margin: 5px 0;
+}
+
+.info-bar div:first-child{
+    border-left: none;
+}
+
+</style>
+
+</head>
+<body>
+
+    <header>
+        <h1>LACOZT</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#">Catalog</a>
+        <a href="#">Pages</a>
+        <a href="./blogpage.html">Blog</a>
+        <a href="#">Contact</a>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+           </div>
+    </nav>
+
+    <section class="main-slider">
+        <div class="content">
+            <p>Revealing the Shimmer</p>
+            <h2>Fabrics That Matches Your Personality</h2>
+            <div class="btn-group">
+                <button class="btn btn-shop-now"><a href="./shopnow.html">Shop Now</a></button>
+                <button class="btn btn-read-more">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    
+<section class="info-bar">
+        <div>
+            <i class="fa-solid fa-rocket"></i>
+            <span>Free Shipping</span>
+            <p>On orders over $99</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-clock"></i>
+            <span>Order Online</span>
+            <p>Easy 24/7 online ordering</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-piggy-bank"></i>
+            <span>Shop & Save</span>
+            <p>For all special & heart</p>
+        </div>
+</section>
+
+</body>
+</html>

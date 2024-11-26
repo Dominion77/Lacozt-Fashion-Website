@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our blog</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.blog {
+    text-align: center;
+    padding: 40px;
+}
+
+.blog h2 {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.blog h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tags span {
+    background-color: #eb8589;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.post h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.post h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.post-meta {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.post p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.footer-column ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-column input[type="text"] {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    width: 300px;
+    color: #fff;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-column button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 1px;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.icons{
+    margin-left: 930px;
+}
+
+@media(max-width:680px){
+    .blog-posts{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .post{
+        width: 100%;
+    }
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h2>Our Blog</h2>
+        <h1>Recent News</h1>
+        <div class="blog-posts">
+            <div class="post">
+                <img src="./images/blo-10.jpg" alt="Fashion Image">
+                <div class="tags">
+                    <span>Spring</span>
+                    <span>Summer</span>
+                </div>
+                <h3>Create New Pages In Your Fashion</h3>
+                <div class="post-meta">
+                    <span>Ramamoorthi M | October 8, 2024 | 97 Comments</span>
+                </div>
+                <p>Praesent tincidunt dolor eget pretium porttitor. Nam malesuada ipsum ligula porttitor placerat...</p>
+            </div>
+            <div class="post">
+                <img src="./images/blo-9.jpg" alt="Fashion Image">
+                <div class="tags">
+                    <span>Spring</span>
+                    <span>Summer</span>
+                </div>
+                <h3>Professional And Casual Looks</h3>
+                <div class="post-meta">
+                    <span>Ramamoorthi M | October 7, 2024 | 96 Comment</span>
+                </div>
+                <p>Vestibulum at suscipit leo dapibus risus. Donec quis interdum tellus. Aliquam fringilla...</p>
+            </div>
+            <div class="post">
+                <img src="./images/blo-8.jpg" alt="Fashion Image">
+                <div class="tags">
+                    <span>Summer</span>
+                    <span>Winter</span>
+                </div>
+                <h3>Every Day Is A Fashion Show</h3>
+                <div class="post-meta">
+                    <span>Ramamoorthi M | September 30, 2024 | 75 Comment</span>
+                </div>
+                <p>Suspendisse ut at scipit leo, dapibus risus. Donec quis interdum tellusium. Aliquam fringilla...</p>
+            </div>
+            <div class="post">
+                <img src="./images/3 piece suit.jpg" alt="Fashion Image">
+                <div class="tags">
+                    <span>Spring</span>
+                    <span>Summer</span>
+                </div>
+                <h3>Who Wouldn't Love A Three Piece Suit</h3>
+                <div class="post-meta">
+                    <span>Herrschaft L | September 25, 2024 | 45 Comments</span>
+                </div>
+                <p>Praesent tincidunt dolor eget pretium porttitor. Nam malesuada ipsum ligula porttitor placerat...</p>
+            </div>
+            <div class="post">
+                <img src="./images/Macario.jpg" alt="Fashion Image">
+                <div class="tags">
+                    <span>Spring</span>
+                    <span>Summer</span>
+                </div>
+                <h3>Feamle Footballer Reflects On Fashion Lifestyle</h3>
+                <div class="post-meta">
+                    <span>Herrschaft L | September 23, 2024 | 67 Comments</span>
+                </div>
+                <p>Praesent tincidunt dolor eget pretium porttitor. Nam malesuada ipsum ligula porttitor placerat...</p>
+            </div>
+            <div class="post">
+                <img src="./images/Dybala.jpg" alt="Fashion Image">
+                <div class="tags">
+                    <span>Spring</span>
+                    <span>Summer</span>
+                </div>
+                <h3>Latest Argentina Kit By Adiddas Now Available</h3>
+                <div class="post-meta">
+                    <span>Herrschaft L | September 22, 2024 | 87 Comments</span>
+                </div>
+                <p>Praesent tincidunt dolor eget pretium porttitor. Nam malesuada ipsum ligula porttitor placerat...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia,</p>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li>Store Location</li>
+                    <li>Order & Return</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Career</li>
+                    <li>Delivery</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li>Help & FAQ's</li>
+                    <li>Information</li>
+                    <li>Shipping Details</li>
+                    <li>Online Payment</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <input type="text" placeholder="Email Address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div> 
+        <p class="footer-bottom">All Right Reserved © 2024, Lacozt</p>
+    </footer>
+
+</body>
+</html>

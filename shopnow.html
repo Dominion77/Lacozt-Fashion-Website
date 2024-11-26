@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop now</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+      
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Encode Sans', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.hero {
+  background-color: #8e82ab;
+  background-image: url(./images/section-bgimage1\ \(1\).jpg);
+  background-size: cover;
+  height: 390px;
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  padding-left: 480px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  background-color: #2b407e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.hero-content button:hover{
+  background-color: #f8f8f8;
+  color: #3358c4;
+}
+
+
+.offers {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2b407e;
+  color: white;
+  padding: 10px 0;
+  height: 90px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.offer-item{
+  text-align: center;
+  border-left: solid 1px #d4ebf8;
+  padding: 0 35px;
+}
+
+.offer-item:first-child{
+  border-left: none;
+}
+
+.offer-item a {
+  color: #d4ebf8;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+
+.products {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.products h2 {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.products h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.product-item {
+  position: relative;
+  background: white;
+  border: 1px solid #ddd;
+  width: 350px;
+  padding: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.product-item .overlay i {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.1);
+}
+
+.product-item:hover .overlay {
+  opacity: 1;
+}
+
+.product-item .overlay i:hover {
+  transform: scale(1.2);
+}
+
+
+.product-item p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product-item span {
+  font-size: 1.2rem;
+  color: #e94c4c;
+}
+
+
+.arrivals {
+  display: flex;
+  gap: 1px;
+  padding: 40px 20px;
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+.arrival-item {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+
+}
+
+.arrival-item h4 {
+  font-size: 1rem;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.arrival-item h2 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.arrival-item p{
+  padding-top: 20px;
+}
+
+.arrival-item button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: black;
+  width: 150px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.arrival-item button:hover{
+  color: #fff;
+  background-color: #2b407e;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.arrival-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29, 24, 24, 0.5);
+  z-index: 1;
+}
+
+.arrival-item h4,
+.arrival-item h2,
+.arrival-item p,
+.arrival-item button {
+  position: relative;
+  z-index: 2;
+}
+
+
+.touch-of-color {
+  background-image: url(./images/section-image-banner2a.jpg)
+}
+
+.bomber-jackets {
+  background-image: url(./images/section-image-banner2b.jpg)
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-item {
+  font-size: 0.9rem;
+  border-left: 1px solid #ddd;
+  padding: 0 35px;
+}
+
+.footer-item:first-child{
+  border-left: none;
+}
+
+    </style>
+</head>
+<body>
+  
+<section class="hero">
+    <div class="hero-content">
+      <p>Big Sale Up to 30% off</p>
+      <h1>Shop For Great Selection Of T-Shirts</h1>
+      <button>Shop now</button>
+    </div>
+  </section>
+  
+  
+  <section class="offers">
+    <div class="offer-item">
+     <p>Order online & get it today</p> 
+     <a href="#">Shop now</a>
+    </div>
+    <div class="offer-item">
+     <p>BACO 50% off Branded Tees</p>
+     <a href="#">Shop now</a>
+    </div>
+    <div class="offer-item">
+    <p>20% off on Export Tees</p> 
+    <a href="#">Shop now</a></div>
+  </section>
+  
+  
+  <section class="products">
+    <h2>Top View This Week</h2>
+    <h3>Product Of The Week</h3>
+    <div class="product-list">
+      <div class="product-item">
+        <img src="./images/CottonAdjustableCaps3.jpg" alt="Cotton Adjustable Caps">
+        <p>Cotton Adjustable Caps</p>
+        <span>$8.54</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/LongSleeveSweatshirts.jpg" alt="Long Sleeve Sweatshirts">
+        <p>Long Sleeve Sweatshirts</p>
+        <span>$13.65</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/Short-SleeveT-Shirt2.jpg" alt="Short Sleeve T-Shirt">
+        <p>Short Sleeve T-Shirt</p>
+        <span>$18.47</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/RegularFitT-Shirt1.jpg" alt="Regular Fit T-Shirt">
+        <p>Regular Fit T-Shirt</p>
+        <span>$8.36</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/PulloverHoodie.jpg" alt="Pullover Hoodie">
+        <p>Pullover Hoodie</p>
+        <span>$12.65</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/Women_sRibbedT-Shirt3.jpg" alt="Women's Ribbed T-Shirt3">
+        <p>Women's Ribbed T-Shirt</p>
+        <span>$19.35</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/Men_sSweatPulloverHoodie3.jpg" alt="Men's Sweat Pullover Hoodie">
+        <p>Men's Sweat Pullover Hoodie</p>
+        <span>$13.68</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./images/PerformanceT-Shirt3.jpg" alt="Performance T-Shirt">
+        <p>Performance T-Shirt</p>
+        <span>$10.24</span>
+        <div class="overlay">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  
+  
+  <section class="arrivals">
+    <div class="arrival-item touch-of-color">
+      <h4>NEW ARRIVALS</h4>
+      <h2>TOUCH OF COLOR</h2>
+      <p>The Crew Neck style T-Shirt</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="arrival-item bomber-jackets">
+      <h4>DISCOVER THEM ALL</h4>
+      <h2>THIS SEASON'S BOMBER JACKETS</h2>
+      <p>The Scoop Neck Style T-Shirt</p>
+      <button>Shop Now</button>
+    </div>
+  </section>
+  
+  
+  <footer class="footer">
+    <div class="footer-item">
+      <i class="fas fa-water"></i>
+      <span> Machine Wash</span>
+      <p>Gentle or Delicate Washing</p>
+    </div>
+    <div class="footer-item">
+      <i class="fas fa-temperature-high"></i>
+      <span>Ironing Temperature</span>
+      <p>Iron at maximum 150°C or 300°F</p>
+    </div>
+    <div class="footer-item">
+      <i class="fas fa-temperature-low"></i>
+      <span>Water Temperature</span>
+      <p>Wash at or below 30°C or 80°F<p>
+      </div>
+  </footer>
+   
+</body>
+</html>
